@@ -26,7 +26,7 @@ class SigninController extends Controller
         }
 
         $email = $request->post('email');
-        $registro = DB::select("SELECT COUNT(`id_usuario`) AS cantidad FROM `usuarios` WHERE `email`='.$email.'");
+        $registro = DB::select("SELECT COUNT(`id`) AS cantidad FROM `usuarios` WHERE `email`='.$email.'");
         $cantidad_correos_iguales = $registro[0];
         if($cantidad_correos_iguales->{'cantidad'} <= 0){
             DB::transaction( function () use ( $request ){
