@@ -1,0 +1,134 @@
+header{
+    display: flex;
+    max-width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    justify-content: space-between;
+}
+
+.logo_container{
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.logo_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__nav-bars{
+    font-size: 40px;
+    align-self: center;
+    margin-right: 24px;
+}
+
+.header__nav-bars:hover > .header-nav {
+    top: 0;
+}
+
+.header-nav{
+    background-color: var(--main-color);
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    box-sizing: border-box;
+    top: -40vh;
+    left: 0;
+    transition: 1s;
+    transition-timing-function: ease;
+    z-index: 200;
+    font-size: 40px;
+}
+
+.header-nav__ul{
+    margin: 0;
+    padding: 80px;
+    width: 100%;
+    align-self: center;
+    text-decoration: none;
+}
+
+.header-nav__li a{
+    text-decoration: none;
+    margin-left: 0;
+    color: #FFF;
+}
+
+.header-nav__li{
+    margin: 40px 0;
+    width: 100%;
+    font-family: Century Gothic,Questrial,Comfortaa,sans-serif;
+    list-style: none;
+    text-align: left;
+    font-size: 24px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.header-nav__li span{
+    background-color: #00FF88;
+    font-size: 12px;
+    position: absolute;
+    top: 16px;
+    right: 12px;
+}
+
+@media (orientation: landscape) {
+
+    .header__nav-bars{
+        height: 100%;
+        width: 50%;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-sizing: content-box;
+    }
+
+    .header-nav {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: flex-end;
+    }
+
+    .header-nav__ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .header-nav__li{
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        height: 100%;
+        margin: 0;
+        width: auto;
+        transition: 0.4s;
+        transition-timing-function: ease;
+    }
+
+    .header-nav__li:hover{
+        background-color: var(--dark-main-color);
+    }
+
+    .header-nav__li i{
+        margin-right: 8px;
+    }
+
+}

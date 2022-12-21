@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--third-color);
+}
+
+.form-group{
+    margin: 80px 10px 0 10px;
+}
+
+.form-login{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    width: 400px;
+    box-sizing: content-box;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-group > label{
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.form-button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.form-button-group > *{
+    width: 80%;
+    margin: 30px 10px 10px 10px;
+    border-radius: 200px;
+}
+
+.logo-container{
+    position: absolute;
+    width: 296px;
+    object-fit: cover;
+    top: -104px;
+    left: 72px;
+    background-color: var(--dark-main-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.logo-container > img{
+    width: 100%;
+    height: 100%;
+}
+
+.background-image{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url("../img/galeria/ferre1.jpg");
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: blur(8px);
+    opacity: 0.8;
+}

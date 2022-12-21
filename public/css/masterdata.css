@@ -1,0 +1,26 @@
+:root {
+    --main-color: #0000CC;
+    --secondary-color: #E5E5FF;
+    --third-color: #0072E5;
+    --dark-main-color: #000055;
+    --icon-color: #15159D;
+    --section-color: #3358FF;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Century Gothic,Questrial,Comfortaa,sans-serif;
+}
+
+body{
+    min-width: 470px !important;
+    max-width: 100vw;
+    min-height: 100vh;
+    color: #FFF;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}

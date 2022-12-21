@@ -1,0 +1,137 @@
+.main-catalogue{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.nav-catalogue{
+    width: 100%;
+    height: min-content;
+    background-color: var(--third-color);
+}
+
+.nav-catalogue-ul{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.nav-catalogue-li{
+    width: 100%;
+    list-style: none;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-catalogue-li > a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-catalogue-li:hover{
+    background-color: var(--section-color);
+}
+
+.container > .row{
+    padding: 24px;
+}
+
+.row > .col {
+    margin: 20px;
+}
+
+.card-style{
+    width: 240px;
+    margin: 24px;
+}
+
+.descripcion{
+    font-size: 12px;
+}
+
+.precio{
+    text-align: center;
+    font-weight: bold;
+}
+
+.carrito{
+    background: none;
+    -webkit-user-select: none; /* for button */
+    -webkit-appearance: button; /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: 0;
+}
+
+.carrito > i{
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    font-size: 32px;
+    padding: 16px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #0F8;
+    transition: 0.4s;
+}
+.carrito > i:hover{
+    color: #FFF;
+}
+
+.main-carrito{
+    background-color: var(--third-color);
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.main-carrito > .container{
+    margin: 0;
+}
+
+.input-quantity{
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+}
+
+.btn-remove{
+    width: 40px;
+    height: 40px;
+    margin: -4px;
+}
+
+@media (orientation: landscape){
+
+    .main-catalogue{
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .nav-catalogue{
+        display: flex;
+        width: max-content;
+        height: 100%;
+        align-items: center;
+    }
+
+    .nav-catalogue-ul{
+        height: initial;
+    }
+
+    .nav-catalogue-li{
+        padding: 16px 24px;
+    }
+
+    .main-catalogue > .container{
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+}
